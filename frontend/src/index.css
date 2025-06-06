@@ -1,0 +1,47 @@
+/* src/index.css */
+
+/* Diretivas do Tailwind CSS */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos Globais Personalizados (Opcional) */
+body {
+  font-family: 'Inter', sans-serif; /* Define a fonte Inter como padrão, se configurada no tailwind.config.js ou importada no HTML */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #0f172a; /* Cor de fundo padrão (slate-900 do Tailwind) */
+  color: #f1f5f9; /* Cor de texto padrão (slate-100 do Tailwind) */
+}
+
+/* Estilização de Scrollbar Personalizada (Opcional) */
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px; /* Largura da scrollbar */
+  height: 8px; /* Altura para scrollbars horizontais */
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #1e293b; /* Cor da trilha (slate-800) */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #475569; /* Cor do "polegar" da scrollbar (slate-600) */
+  border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #64748b; /* Cor do "polegar" ao passar o rato (slate-500) */
+}
+
+/* Animação de FadeIn (Exemplo usado nos componentes) */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.3s ease-out forwards;
+}
+
+/* Outros estilos globais podem ser adicionados aqui */
