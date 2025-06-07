@@ -1,0 +1,12 @@
+# requirements.txt
+fastapi
+uvicorn[standard]
+asyncpg
+databases[postgresql]
+python-dotenv
+passlib[bcrypt]
+python-jose[cryptography]
+pydantic
+pydantic-settings
+pydantic[email]
+python-multipart
